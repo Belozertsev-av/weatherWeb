@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background: linear-gradient(#8e2de2, #4a00e0);
+  position: fixed;
+  font-family: "Inter";
+  color: rgba(255, 255, 255, 0.8);
+  font-size: calc(20px + 8 * (100vw - 320px) / 1120);
+  line-height: calc(20px + 16 * (100vw - 320px) / 1120);
+}
+
+.item {
+  padding-right: calc(10px + 20 * (100vw - 320px) / 1120);
+  padding-left: calc(10px + 20 * (100vw - 320px) / 1120);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.item img {
+  height: calc(25px + 15 * (100vw - 320px) / 1120);
+  width: calc(25px + 15 * (100vw - 320px) / 1120);
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.5;
+}
+
+.wrapper {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(20px + 20 * (100vw - 320px) / 1120);
+}
+.header__title {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-right: calc(5px + 10 * (100vw - 320px) / 1120);
+  padding-left: calc(5px + 10 * (100vw - 320px) / 1120);
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.main__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__window {
+  padding: calc(20px + 20 * (100vw - 320px) / 1120);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__degrees {
+  padding: 5px 0;
+  font-size: calc(40px + 32 * (100vw - 320px) / 1120);
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.main__degrees span {
+  display: block;
+  padding-bottom: calc(18px + 17 * (100vw - 320px) / 1120);
+  font-size: calc(22px + 18 * (100vw - 320px) / 1120);
+}
+.main__icon {
+  position: relative;
+}
+.main__icon::before {
+  content: "";
+  background-color: #e9daff;
+  filter: blur(2rem);
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.main__icon img {
+  height: 100px;
+  width: 100px;
+}
+.main__weather-type {
+  padding-bottom: 20px;
+}
+.main__btn-change-city {
+  font-size: calc(12px + 5 * (100vw - 320px) / 1120);
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main__sub-window {
+  width: 100%;
+  padding: calc(5px + 5 * (100vw - 320px) / 1120);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-window__row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.sub-window__row span {
+  font-size: calc(16px + 5 * (100vw - 320px) / 1120);
+  color: rgba(255, 255, 255, 0.5);
+}
+.sub-window__row:first-child {
+  padding-bottom: calc(30px + 20 * (100vw - 320px) / 1120);
+}
+
+.footer__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(20px + 20 * (100vw - 320px) / 1120);
+}
+.footer__text {
+  font-size: calc(16px + 5 * (100vw - 320px) / 1120);
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App by Belozertsev A.V</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__title">Weather in Moscow</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__body">
+          <div class="main__window">
+            <div class="main__degrees">8<span>o</span>C</div>
+            <div class="main__icon">
+              <img src="https://openweathermap.org/img/wn/09d@2x.png" alt="icon">
+            </div>
+            <div class="main__weather-type">Windy</div>
+            <div class="main__btn-change-city">change City</div>
+          </div>
+          <div class="main__sub-window">
+            <div class="sub-window__row">
+              <div class="main__feels-like item">
+                <img src="./assets/img/feelslike.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Feels like:<br></span>10C
+                </div>
+              </div>
+              <div class="main__wind-speed item">
+                <img src="./assets/img/wind.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Wind speed:<br></span>23 m/s
+                </div>
+              </div>
+              <div class="main__pressure item">
+                <img src="./assets/img/pressure.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Pressure:<br></span>1019
+                </div>
+              </div>
+            </div>
+            <div class="sub-window__row">
+              <div class="main__clouds item">
+                <img src="./assets/img/clouds.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Clouds:<br></span> 0
+                </div>
+              </div>
+              <div class="main__visibility item">
+                <img src="./assets/img/visibility.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Visibility:<br></span>10000
+                </div>
+              </div>
+            </div>
+            <div class="sub-window__row">
+              <div class="main__sunrise item">
+                <img src="./assets/img/sunrise.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Sunrise:<br></span>12:30
+                </div>
+              </div>
+              <div class="main__sunset item">
+                <img src="./assets/img/sunset.png" alt="icon">
+                <div class="main__subtitle">
+                  <span>Sunset:<br></span>21:30
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="main__error"></section>
+      <section class="main__pick-city"></section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__text">Made by Belozertsev A.V</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>

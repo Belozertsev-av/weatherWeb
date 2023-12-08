@@ -1,0 +1,149 @@
+@import "./mixins.scss";
+@import "./nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+    background: linear-gradient(#8e2de2, #4a00e0);
+    position: fixed;
+    font-family: "Inter";
+    color: rgba($color: #fff, $alpha: 0.8);
+    @include adaptive-value("font-size", 28, 20, 0);
+    @include adaptive-value("line-height", 36, 20, 0);
+}
+
+.item {
+    @include adaptive-value("padding-right", 30, 10, 0);
+    @include adaptive-value("padding-left", 30, 10, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    img {
+        @include adaptive-value("height", 40, 25, 0);
+        @include adaptive-value("width", 40, 25, 0);
+        object-fit: contain;
+        opacity: 0.5;
+    }
+}
+.wrapper {
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.header {
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include adaptive-value("padding", 40, 20, 0);
+    }
+
+    &__title {
+        color: rgba($color: #fff, $alpha: 0.5);
+    }
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    @include adaptive-value("padding-right", 15, 5, 0);
+    @include adaptive-value("padding-left", 15, 5, 0);
+}
+.main {
+    flex: 1 1 auto;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__window {
+        @include adaptive-value("padding", 40, 20, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__degrees {
+        padding: 5px 0;
+        @include adaptive-value("font-size", 72, 40, 0);
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        span {
+            display: block;
+            @include adaptive-value("padding-bottom", 35, 18, 0);
+            @include adaptive-value("font-size", 40, 22, 0);
+        }
+    }
+    &__icon {
+        &::before {
+            content: "";
+            background-color: #e9daff;
+            filter: blur(2rem);
+            position: absolute;
+            z-index: -1;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+        position: relative;
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    &__weather-type {
+        padding-bottom: 20px;
+    }
+
+    &__btn-change-city {
+        @include adaptive-value("font-size", 17, 12, 0);
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgba($color: #fff, $alpha: 0.5);
+    }
+
+    &__sub-window {
+        width: 100%;
+        @include adaptive-value("padding", 10, 5, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.sub-window {
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        span {
+            @include adaptive-value("font-size", 21, 16, 0);
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+        &:first-child {
+            @include adaptive-value("padding-bottom", 50, 30, 0);
+        }
+    }
+}
+.footer {
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include adaptive-value("padding", 40, 20, 0);
+    }
+
+    &__text {
+        @include adaptive-value("font-size", 21, 16, 0);
+        color: rgba($color: #fff, $alpha: 0.5);
+    }
+}
