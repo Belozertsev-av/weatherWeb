@@ -10,7 +10,14 @@ body {
     @include adaptive-value("font-size", 28, 20, 0);
     @include adaptive-value("line-height", 36, 20, 0);
 }
-
+.btn{
+   @include adaptive-value("padding-left", 30, 20, 0);
+    @include adaptive-value("padding-right", 30, 20, 0);
+    @include adaptive-value("padding-top", 15, 10, 0);
+    @include adaptive-value("padding-bottom", 15, 10, 0);
+    border-radius: 10px;
+    color: #8e2de2;
+}
 .item {
     @include adaptive-value("padding-right", 30, 10, 0);
     @include adaptive-value("padding-left", 30, 10, 0);
@@ -40,10 +47,20 @@ body {
         align-items: center;
         @include adaptive-value("padding", 40, 20, 0);
     }
-
+    &__arrow {
+      //flex
+      display: none;
+      text-align: left;
+      @include adaptive-value("padding", 40, 20, 0);
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
     &__title {
         color: rgba($color: #fff, $alpha: 0.5);
+        display: flex;
     }
+}
+#location {
+  margin-left: 5px;
 }
 .container {
     max-width: 1170px;
@@ -133,6 +150,54 @@ body {
             @include adaptive-value("padding-bottom", 50, 30, 0);
         }
     }
+}
+.error{
+  &__body{
+    height: 70vh;
+    //flex
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtitle{
+    color: rgba($color: #fff, $alpha: 0.5);
+    @include adaptive-value("font-size", 20, 16, 0);
+    @include adaptive-value("padding-top", 15, 10, 0);
+  }
+  &__btn{
+    margin-top: 30px;
+  }
+}
+.city{
+  &__body{
+    height: 70vh;
+    //flex
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__input {
+    width: 300px;
+    @include adaptive-value("padding-left", 30, 15, 0);
+    @include adaptive-value("padding-right", 30, 15, 0);
+    @include adaptive-value("padding-top", 15, 10, 0);
+    @include adaptive-value("padding-bottom", 15, 10, 0);
+    background-color: rgba($color: #fff, $alpha: 0);
+    text-align: center;
+    @include adaptive-value("font-size", 28, 20, 0);
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    &::placeholder{
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &__btn{
+    margin-top: 30px;
+  }
 }
 .footer {
     &__body {
