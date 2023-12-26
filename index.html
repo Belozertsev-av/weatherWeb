@@ -13,9 +13,10 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <div id="arrow" class="header__arrow"><</div>
+        <div id="arrow" class="header__arrow"></div>
         <div id="header" class="header__body">
-          <div class="header__title">Weather in<p id="location"> Moscow</p></div>
+          <div class="header__title">Weather in<p id="location"> Moscow</p>
+          </div>
         </div>
       </div>
     </header>
@@ -23,7 +24,9 @@
       <div class="container">
         <section id="main" class="main__body">
           <div class="main__window">
-            <div class="main__degrees"><p id="deg">8</p><span>o</span>C</div>
+            <div class="main__degrees">
+              <p id="deg">8</p><span>o</span>C
+            </div>
             <div class="main__icon">
               <img id="img" alt="icon">
             </div>
@@ -34,41 +37,48 @@
             <div class="sub-window__row">
               <div class="main__feels-like item">
                 <div class="main__subtitle">
-                  <span>Feels like:<br></span><p id="feelsLike">10</p>
+                  <span>Feels like:<br></span>
+                  <p id="feelsLike">10</p>
                 </div>
               </div>
               <div class="main__wind-speed item">
                 <div class="main__subtitle">
-                  <span>Wind speed:<br></span><p id="wind">23</p>
+                  <span>Wind speed:<br></span>
+                  <p id="wind">23</p>
                 </div>
               </div>
               <div class="main__pressure item">
                 <div class="main__subtitle">
-                  <span>Pressure:<br></span><p id="pressure">1019</p>
+                  <span>Pressure:<br></span>
+                  <p id="pressure">1019</p>
                 </div>
               </div>
             </div>
             <div class="sub-window__row">
               <div class="main__clouds item">
                 <div class="main__subtitle">
-                  <span>Clouds:<br></span><p id="clouds">0</p>
+                  <span>Clouds:<br></span>
+                  <p id="clouds">0</p>
                 </div>
               </div>
               <div class="main__visibility item">
                 <div class="main__subtitle">
-                  <span>Visibility:<br></span><p id="visibility">10000</p>
+                  <span>Visibility:<br></span>
+                  <p id="visibility">10000</p>
                 </div>
               </div>
             </div>
             <div class="sub-window__row">
               <div class="main__sunrise item">
                 <div class="main__subtitle">
-                  <span>Sunrise:<br></span><p id="sunrise">12:30</p>
+                  <span>Sunrise:<br></span>
+                  <p id="sunrise">12:30</p>
                 </div>
               </div>
               <div class="main__sunset item">
                 <div class="main__subtitle">
-                  <span>Sunset:<br></span><p id="sunset">21:30</p>
+                  <span>Sunset:<br></span>
+                  <p id="sunset">21:30</p>
                 </div>
               </div>
             </div>
@@ -80,8 +90,8 @@
           <button id="tryButton" class="error__btn btn">Try again</button>
         </section>
         <section id="city" class="city__body">
-              <input id="input" type="text" placeholder="Type your city here" class="city__input">
-              <button id="select" class="city__btn btn">Select</button>
+          <input id="input" type="text" placeholder="Type your city here" class="city__input">
+          <button id="select" class="city__btn btn">Select</button>
         </section>
       </div>
     </main>
